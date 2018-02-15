@@ -153,13 +153,13 @@ or exclude it from compilation.
 	"GladmanAES" to "AESGladman", since this groups directories by algorithm in
 	listings, but I am resisting for the moment.)
 */
-#if defined __i386__ || defined __x86_64__
+//#if defined __i386__ || defined __x86_64__
 	// On Intel architectures, use AESedp.
 	#define	UseAESedp
-#else
+//#else
 	// Otherwise, use Gladman AES.
-	#define	UseGladmanAES
-#endif
+//	#define	UseGladmanAES
+//#endif
 
 /*	Suppressing all source in a module would yield an empty module after
 	preprocessing.  GCC allows this, but standard C requires a module to
